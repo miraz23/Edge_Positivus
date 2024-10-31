@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivus</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="mx-[50px]">
+    <div class="navbar bg-base-100 py-[30px]">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Item 1</a></li>
+                    <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <div class="flex justify-between">
+                <a class="w-[200px] h-[40px]"><img src="./logo-big.png" alt=""></a>
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[20px]">
+                <li><a>About Us</a></li>
+                <li><a>Services</a></li>
+                <li><a>Use Cases</a></li>
+                <li><a>Pricing</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn border-2 border-[#222] lg: hidden">Request a quote</a>
+        </div>
+    </div>
+
+
+    <section class="flex justify-between flex-col text-center lg:text-left lg:flex-row py-20px">
+        <div class="lg:w-[40%]">
+            <h1 class="text-[40px] font-semibold py-[10px]">Navigating the digital landscape for success</h1>
+            <div class="hidden lg:block">
+                <p class="text-[20px] py-[20px]">Our digital marketing agency helps businesses grow and succeed online
+                    through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+                <button class="btn btn-neutral text-[18px] p-[10px]">Book a consultation</button>
+            </div>
+        </div>
+        <div class="w-[320px] h-[300px] lg:w-[420px] lg:h-[420px] text-[30px] lg:m-[20px]">
+            <img src="./cover.png" alt="">
+        </div>
+        <div class="lg:hidden">
+            <p class="text-[20px] py-[20px]">Our digital marketing agency helps businesses grow and succeed online
+                through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+            <button class="btn btn-neutral text-[18px] p-[10px] w-[100%]">Book a consultation</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="my-[100px] grid grid-cols-2 lg:flex lg:justify-between">
+            <div class="flex justify-center"><img width="120px" height="40px" src="./amazon.png" alt=""></div>
+            <div class="flex justify-center"><img width="120px" height="40px" src="./dribble.png" alt=""></div>
+            <div class="flex justify-center"><img width="120px" height="40px" src="./hubspot.png" alt=""></div>
+            <div class="flex justify-center"><img width="120px" height="40px" src="./notion.png" alt=""></div>
+            <div class="flex justify-center"><img width="120px" height="40px" src="./netflix.png" alt=""></div>
+            <div class="flex justify-center"><img width="120px" height="40px" src="./zoom.png" alt=""></div>
+        </div>
+    </section>
+
+    <section class="my-[100px]">
+        <div class="flex flex-col lg:flex lg:flex-row lg:gap-[20px] items-center">
+            <h1 class="text-[30px] font-semibold bg-[#B9FF66] p-[10px]">Case Studies</h1>
+            <p class=" w-[100%] p-[10px] lg:w-[40%] text-[20px]">Explore Real-Life Examples of Our Proven Digital Marketing Success through
+                Our Case Studies</p>
+        </div>
+        <div class="bg-black flex flex-col lg:flex-row p-[40px] my-[50px] rounded-3xl">
+            <div class="border-r-2 border-[#fff] px-[50px]">
+                <p class="text-[#fff] text-[20px] py-[10px]">For a local restaurant, we implemented a targeted PPC
+                    campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                <div class="flex items-center">
+                    <a href="" class="text-[#B9FF66] text-[20px]">Learn more
+                    </a>
+                    <div>
+                        <svg width="15" height="12" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z"
+                                fill="#B9FF66" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-r-2 bordere-[#fff] px-[50px]">
+                <p class="text-[#fff] text-[20px]  py-[10px]">For a local restaurant, we implemented a targeted PPC
+                    campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                <div class="flex items-center">
+                    <a href="" class="text-[#B9FF66] text-[20px]">Learn more
+                    </a>
+                    <div>
+                        <svg width="15" height="12" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z"
+                                fill="#B9FF66" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-[50px]">
+                <p class="text-[#fff] text-[20px]  py-[10px]">For a local restaurant, we implemented a targeted PPC
+                    campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                <div class="flex items-center">
+                    <a href="" class="text-[#B9FF66] text-[20px]">Learn more
+                    </a>
+                    <div>
+                        <svg width="15" height="12" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z"
+                                fill="#B9FF66" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
