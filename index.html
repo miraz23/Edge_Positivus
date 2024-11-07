@@ -1,60 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Positivus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="mx-[50px]">
-    <div class="navbar bg-base-100 py-[30px]">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <ul tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
-            </div>
-            <div class="flex justify-between">
-                <a class="w-[200px] h-[40px]"><img src="./logo-big.png" alt=""></a>
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </div>
-            </div>
-            
-        </div>
+      <header>
+        <nav class="flex flex-row justify-between items-center py-5 ">
+          <div>
+              <img src="./logo-big.png" alt="">
+          </div>
 
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-[20px]">
-                <li><a>About Us</a></li>
-                <li><a>Services</a></li>
-                <li><a>Use Cases</a></li>
-                <li><a>Pricing</a></li>
-                <li><a>Blog</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <a class="btn border-2 border-[#222] lg: hidden">Request a quote</a>
-        </div>
-    </div>
+          <div class="dropdown dropdown-end min-[1250px]:hidden">
+              <div tabindex="0" role="button" class="btn m-1"><img src="./menu.png" alt=""></div>
+              <ul tabindex="0"
+                  class="dropdown-content menu bg-[#191A23] rounded-box z-[1] w-52 p-2 shadow text-[#F3F3F3]">
+                  <li><a>About us</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Use Cases</a></li>
+                  <li><a>Pricing</a></li>
+                  <li><a>Blog</a></li>
+                  <button class="btn btn-sm btn-outline text-[#f4f4f4] text-[1.25rem]">Request a quote</button>
+              </ul>
+          </div>
+
+          <nav class="hidden min-[1250px]:flex flex-row gap-x-[2.5rem] items-center">
+              <ul class="flex flex-row gap-x-[2.5rem]">
+                  <li><a class="pb-2 hover:border-b-4 hover:border-[#B9FF66]">About us</a></li>
+                  <li><a class="pb-2 hover:border-b-4 hover:border-[#B9FF66]">Services</a></li>
+                  <li><a class="pb-2 hover:border-b-4 hover:border-[#B9FF66]">Use Cases</a></li>
+                  <li><a class="pb-2 hover:border-b-4 hover:border-[#B9FF66]">Pricing</a></li>
+                  <li><a class="pb-2 hover:border-b-4 hover:border-[#B9FF66]">Blog</a></li>
+              </ul>
+              <button class="btn btn-md btn-outline text-[#191A23] text-[1.25rem]">Request a quote</button>
+          </nav>
+      </nav>
+    </header>
 
 
-    <section class="flex justify-between flex-col text-center lg:text-left lg:flex-row py-20px">
+    <section class="flex justify-between items-center flex-col text-center lg:text-left lg:flex-row py-20px">
         <div class="lg:w-[40%]">
             <h1 class="text-[40px] font-semibold py-[10px]">Navigating the digital landscape for success</h1>
             <div class="hidden lg:block">
@@ -63,7 +55,7 @@
                 <button class="btn btn-neutral text-[18px] p-[10px]">Book a consultation</button>
             </div>
         </div>
-        <div class="w-[320px] h-[300px] lg:w-[420px] lg:h-[420px] text-[30px] lg:m-[20px]">
+        <div class="w-[320px] h-[300px] lg:w-[500px] lg:h-[400px] text-[30px] lg:m-[20px]">
             <img src="./cover.png" alt="">
         </div>
         <div class="lg:hidden">
@@ -75,72 +67,238 @@
 
     <section>
         <div class="my-[100px] grid grid-cols-2 lg:flex lg:justify-between">
-            <div class="flex justify-center"><img width="120px" height="40px" src="./amazon.png" alt=""></div>
-            <div class="flex justify-center"><img width="120px" height="40px" src="./dribble.png" alt=""></div>
-            <div class="flex justify-center"><img width="120px" height="40px" src="./hubspot.png" alt=""></div>
-            <div class="flex justify-center"><img width="120px" height="40px" src="./notion.png" alt=""></div>
-            <div class="flex justify-center"><img width="120px" height="40px" src="./netflix.png" alt=""></div>
-            <div class="flex justify-center"><img width="120px" height="40px" src="./zoom.png" alt=""></div>
+            <div class="flex justify-center filter grayscale hover:filter-none"><img width="120px" height="40px" src="./amazon.png" alt=""></div>
+            <div class="flex justify-center filter grayscale hover:filter-none"><img width="120px" height="40px" src="./dribble.png" alt=""></div>
+            <div class="flex justify-center filter grayscale hover:filter-none"><img width="120px" height="40px" src="./hubspot.png" alt=""></div>
+            <div class="flex justify-center filter grayscale hover:filter-none"><img width="120px" height="40px" src="./notion.png" alt=""></div>
+            <div class="flex justify-center filter grayscale hover:filter-none"><img width="120px" height="40px" src="./netflix.png" alt=""></div>
+            <div class="flex justify-center filter grayscale hover:filter-none"><img width="120px" height="40px" src="./zoom.png" alt=""></div>
         </div>
     </section>
 
     <section class="my-[100px]">
-        <div class="flex flex-col lg:flex lg:flex-row lg:gap-[20px] items-center">
-            <h1 class="text-[30px] font-semibold bg-[#B9FF66] p-[10px]">Case Studies</h1>
-            <p class=" w-[100%] p-[10px] lg:w-[40%] text-[20px]">Explore Real-Life Examples of Our Proven Digital Marketing Success through
-                Our Case Studies</p>
+
+        <div class="flex flex-col lg:flex-row items-center gap-10 my-10">
+          <h1 class="text-[30px] font-semibold bg-[#B9FF66] p-[10px] text-center lg:text-left">Case Studies</h1>
+            <p class=" w-[100%] p-[10px] lg:w-[40%] text-[20px] text-center lg:text-left">Explore Real-Life Examples of Our Proven Digital Marketing Success through
+              Our Case Studies</p>
         </div>
-        <div class="bg-black flex flex-col lg:flex-row p-[40px] my-[50px] rounded-3xl">
-            <div class="border-r-2 border-[#fff] px-[50px]">
-                <p class="text-[#fff] text-[20px] py-[10px]">For a local restaurant, we implemented a targeted PPC
-                    campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
-                <div class="flex items-center">
-                    <a href="" class="text-[#B9FF66] text-[20px]">Learn more
-                    </a>
-                    <div>
-                        <svg width="15" height="12" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z"
-                                fill="#B9FF66" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
 
-            <div class="border-r-2 bordere-[#fff] px-[50px]">
-                <p class="text-[#fff] text-[20px]  py-[10px]">For a local restaurant, we implemented a targeted PPC
-                    campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
-                <div class="flex items-center">
-                    <a href="" class="text-[#B9FF66] text-[20px]">Learn more
-                    </a>
-                    <div>
-                        <svg width="15" height="12" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z"
-                                fill="#B9FF66" />
-                        </svg>
-                    </div>
-                </div>
+        <div class="carousel rounded-none lg:rounded-[45px] lg:w-[100%] flex flex-row gap-5 justify-around bg-none lg:bg-[#191A23]">
+          <div class="carousel-item bg-[#191A23] rounded-[45px]">
+            <div class="px-12 py-14 lg:px-14 lg:py-16">
+              <p class="text-white">
+                For a local restaurant, we <br />
+                implemented a targeted PPC <br />
+                campaign that resulted in a 50% <br />
+                increase in website traffic and a <br />
+                25% increase in sales.
+              </p>
+              <div class="flex items-center gap-2 my-5">
+                <div class="text-[#B9FF66] cursor-pointer">
+                  Learn More </div>
+                  <div><svg width="15" height="15" viewBox="0 0 20.3262 17.7012" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path id="Arrow 1" d="M2.26 15.87L2.25 15.9C1.52 16.32 0.62 16.08 0.2 15.35C-0.22 14.63 0.02 13.72 0.75 13.3L0.78 13.31L2.26 15.87ZM16.98 5.66L6.84 2.95C6.03 2.73 5.56 1.92 5.78 1.11C6 0.3 6.81 -0.17 7.62 0.05L19.21 3.15C20.02 3.37 20.49 4.18 20.27 4.99L17.16 16.58C16.94 17.39 16.14 17.86 15.33 17.64C14.51 17.43 14.05 16.62 14.26 15.81L16.98 5.66Z" fill="#B9FF66" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    <path id="Arrow 1" d="M14.93 5.11L6.84 2.95C6.03 2.73 5.56 1.92 5.78 1.11C6 0.3 6.81 -0.17 7.62 0.05L19.21 3.15C20.02 3.37 20.49 4.18 20.27 4.99L17.16 16.58C16.94 17.39 16.14 17.86 15.33 17.64C14.51 17.43 14.05 16.62 14.26 15.81L16.43 7.71L2.25 15.9C1.52 16.32 0.62 16.08 0.2 15.35C-0.22 14.63 0.02 13.72 0.75 13.3L14.93 5.11Z" fill="#B9FF66" fill-opacity="1.000000" fill-rule="evenodd"/>
+                  </svg></div>
+              </div>
+              
             </div>
-
-            <div class="px-[50px]">
-                <p class="text-[#fff] text-[20px]  py-[10px]">For a local restaurant, we implemented a targeted PPC
-                    campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
-                <div class="flex items-center">
-                    <a href="" class="text-[#B9FF66] text-[20px]">Learn more
-                    </a>
-                    <div>
-                        <svg width="15" height="12" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z"
-                                fill="#B9FF66" />
-                        </svg>
-                    </div>
+          </div>
+          <div class="carousel-item bg-[#191A23] rounded-[45px]">
+            <div class="px-10 py-12 lg:px-14 lg:py-16">
+              <div class="sm:border-l-0 lg:border-l-2 pl-0 lg:pl-16">
+                <p class="text-white">
+                  For a local restaurant, we <br />
+                  implemented a targeted PPC <br />
+                  campaign that resulted in a 50% <br />
+                  increase in website traffic and a <br />
+                  25% increase in sales.
+                </p>
+                <div class="flex items-center gap-2 my-5">
+                  <div class="text-[#B9FF66] cursor-pointer">
+                    Learn More </div>
+                    <div><svg width="15" height="15" viewBox="0 0 20.3262 17.7012" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path id="Arrow 1" d="M2.26 15.87L2.25 15.9C1.52 16.32 0.62 16.08 0.2 15.35C-0.22 14.63 0.02 13.72 0.75 13.3L0.78 13.31L2.26 15.87ZM16.98 5.66L6.84 2.95C6.03 2.73 5.56 1.92 5.78 1.11C6 0.3 6.81 -0.17 7.62 0.05L19.21 3.15C20.02 3.37 20.49 4.18 20.27 4.99L17.16 16.58C16.94 17.39 16.14 17.86 15.33 17.64C14.51 17.43 14.05 16.62 14.26 15.81L16.98 5.66Z" fill="#B9FF66" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      <path id="Arrow 1" d="M14.93 5.11L6.84 2.95C6.03 2.73 5.56 1.92 5.78 1.11C6 0.3 6.81 -0.17 7.62 0.05L19.21 3.15C20.02 3.37 20.49 4.18 20.27 4.99L17.16 16.58C16.94 17.39 16.14 17.86 15.33 17.64C14.51 17.43 14.05 16.62 14.26 15.81L16.43 7.71L2.25 15.9C1.52 16.32 0.62 16.08 0.2 15.35C-0.22 14.63 0.02 13.72 0.75 13.3L14.93 5.11Z" fill="#B9FF66" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg></div>
                 </div>
+              </div>
             </div>
-
+          </div>
+          <div class="carousel-item bg-[#191A23] rounded-[45px]">
+            <div class="px-10 py-12 lg:px-14 lg:py-16">
+              <div class="sm:border-l-0 lg:border-l-2 pl-0 lg:pl-16">
+                <p class="text-white">
+                  For a local restaurant, we <br />
+                  implemented a targeted PPC <br />
+                  campaign that resulted in a 50% <br />
+                  increase in website traffic and a <br />
+                  25% increase in sales.
+                </p>
+                <div class="flex items-center gap-2 my-5">
+                  <div class="text-[#B9FF66] cursor-pointer">
+                    Learn More </div>
+                    <div><svg width="15" height="15" viewBox="0 0 20.3262 17.7012" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path id="Arrow 1" d="M2.26 15.87L2.25 15.9C1.52 16.32 0.62 16.08 0.2 15.35C-0.22 14.63 0.02 13.72 0.75 13.3L0.78 13.31L2.26 15.87ZM16.98 5.66L6.84 2.95C6.03 2.73 5.56 1.92 5.78 1.11C6 0.3 6.81 -0.17 7.62 0.05L19.21 3.15C20.02 3.37 20.49 4.18 20.27 4.99L17.16 16.58C16.94 17.39 16.14 17.86 15.33 17.64C14.51 17.43 14.05 16.62 14.26 15.81L16.98 5.66Z" fill="#B9FF66" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      <path id="Arrow 1" d="M14.93 5.11L6.84 2.95C6.03 2.73 5.56 1.92 5.78 1.11C6 0.3 6.81 -0.17 7.62 0.05L19.21 3.15C20.02 3.37 20.49 4.18 20.27 4.99L17.16 16.58C16.94 17.39 16.14 17.86 15.33 17.64C14.51 17.43 14.05 16.62 14.26 15.81L16.43 7.71L2.25 15.9C1.52 16.32 0.62 16.08 0.2 15.35C-0.22 14.63 0.02 13.72 0.75 13.3L14.93 5.11Z" fill="#B9FF66" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
+
+    <section class="my-20 px-4 ">
+        <div class="flex flex-col lg:flex-row items-center gap-10 my-10">
+          <h1 class="text-[30px] font-semibold bg-[#B9FF66] p-[10px] text-center lg:text-left">Our Working Process</h1>
+            <p class=" w-[100%] p-[10px] lg:w-[40%] text-[20px] text-center lg:text-left">Step-by-Step Guide to Achieving <br class="hidden lg:block" />Your Business Goals</p>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <div class="collapse collapse-plus bg-[#F3F3F3] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer">
+            <input
+              type="radio"
+              name="my-accordion-3"
+              class="peer"
+              checked="checked"
+            />
+            <div class="collapse-title text-xl font-medium flex gap-3 items-center peer-checked:bg-[#B9FF66]">
+              <span class="text-4xl font-semibold">01</span>Consultation
+            </div>
+            <div class="collapse-content peer-checked:bg-[#B9FF66]">
+              <p class="border-black border-t-2 py-6">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts. This will allow us to understand your needs and tailor
+                our services to best fit your requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-plus bg-[#F3F3F3] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer">
+            <input type="radio" name="my-accordion-3" class="peer" />
+            <div class="collapse-title text-xl font-medium flex gap-3 items-center peer-checked:bg-[#B9FF66]">
+              <span class="text-4xl font-semibold">02</span>Research and
+              Strategy Development
+            </div>
+            <div class="collapse-content peer-checked:bg-[#B9FF66]">
+              <p class="border-black border-t-2 py-6">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts. This will allow us to understand your needs and tailor
+                our services to best fit your requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-plus bg-[#F3F3F3] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer">
+            <input type="radio" name="my-accordion-3" class="peer" />
+            <div class="collapse-title text-xl font-medium flex gap-3 items-center peer-checked:bg-[#B9FF66]">
+              <span class="text-4xl font-semibold">03</span>Implementation
+            </div>
+            <div class="collapse-content peer-checked:bg-[#B9FF66]">
+              <p class="border-black border-t-2 py-6">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts. This will allow us to understand your needs and tailor
+                our services to best fit your requirements.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-[#F3F3F3] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer">
+            <input type="radio" name="my-accordion-3" class="peer" />
+            <div class="collapse-title text-xl font-medium flex gap-3 items-center peer-checked:bg-[#B9FF66]">
+              <span class="text-4xl font-semibold">04</span>Monitoring and Optimization
+            </div>
+            <div class="collapse-content peer-checked:bg-[#B9FF66]">
+              <p class="border-black border-t-2 py-6">
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts. This will allow us to understand your needs and tailor
+                our services to best fit your requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="bg-[#191A23] mx-[-50px] lg:mx-[20px] px-[50px] lg:p-12 rounded-none lg:rounded-t-[45px]">
+      <div class="flex flex-col lg:flex-row lg:justify-between gap-5 lg:gap-0 items-center text-center w-[100%]">
+        <div class="mt-[50px]">
+          <img src="./logo-small.png" alt="logo-small" />
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5">
+          <a class="link link-hover text-white">About us</a>
+          <a class="link link-hover text-white">Services</a>
+          <a class="link link-hover text-white">Use Cases</a>
+          <a class="link link-hover text-white">Pricing</a>
+          <a class="link link-hover text-white">Blog</a>
+        </div>
+        <div class="hidden md:hidden lg:block">
+          <div class="flex flex-row gap-5">
+            <svg width="130.000000" height="30.000000" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle id="Ellipse 3" cx="15.000000" cy="15.000000" r="15.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+              <path id="linkedin" d="M9.76 10.66C8.73 10.66 7.94 9.87 7.94 8.88C7.94 7.9 8.73 7.05 9.76 7.05C10.74 7.05 11.53 7.9 11.53 8.88C11.53 9.87 10.74 10.66 9.76 10.66ZM19.81 22.05L22.94 22.05L22.94 16.57C22.94 13.9 22.33 11.79 19.2 11.79C17.7 11.79 16.67 12.63 16.25 13.43L16.21 13.43L16.21 12.07L13.26 12.07L13.26 22.05L16.35 22.05L16.35 17.13C16.35 15.82 16.58 14.55 18.22 14.55C19.81 14.55 19.81 16.05 19.81 17.18L19.81 22.05ZM11.3 22.05L8.22 22.05L8.22 12.07L11.3 12.07L11.3 22.05Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+              <path id="Social icon" d="M80 15.09C80 6.75 73.28 0 65 0C56.71 0 50 6.75 50 15.09C50 22.63 55.44 28.9 62.64 30L62.64 19.47L58.83 19.47L58.83 15.09L62.64 15.09L62.64 11.8C62.64 8.03 64.87 5.9 68.26 5.9C69.95 5.9 71.65 6.2 71.65 6.2L71.65 9.91L69.77 9.91C67.9 9.91 67.29 11.07 67.29 12.29L67.29 15.09L71.47 15.09L70.8 19.47L67.29 19.47L67.29 30C74.49 28.9 80 22.63 80 15.09Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+              <circle id="Ellipse 13" cx="115.000000" cy="15.000000" r="15.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+              <path id="twitter" d="M121.99 11.49C122.68 10.97 123.3 10.35 123.78 9.63C123.16 9.9 122.44 10.11 121.72 10.18C122.47 9.73 123.02 9.04 123.3 8.18C122.61 8.59 121.82 8.9 121.03 9.07C120.34 8.35 119.41 7.94 118.37 7.94C116.37 7.94 114.75 9.56 114.75 11.56C114.75 11.83 114.79 12.11 114.86 12.38C111.86 12.21 109.17 10.76 107.38 8.59C107.07 9.11 106.9 9.73 106.9 10.42C106.9 11.66 107.52 12.76 108.52 13.42C107.93 13.38 107.34 13.24 106.86 12.97L106.86 13C106.86 14.76 108.1 16.21 109.76 16.55C109.48 16.62 109.14 16.69 108.83 16.69C108.58 16.69 108.38 16.66 108.14 16.62C108.58 18.07 109.93 19.1 111.51 19.14C110.27 20.1 108.72 20.69 107.03 20.69C106.72 20.69 106.45 20.65 106.17 20.62C107.76 21.65 109.65 22.24 111.72 22.24C118.37 22.24 121.99 16.76 121.99 11.97C121.99 11.8 121.99 11.66 121.99 11.49Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+            </svg>            
+          </div>
+        </div>
+      </div>
+
+      <div class="py-8 flex flex-col lg:flex-row lg:justify-between items-center gap-5 lg:gap-0 lg:text-left text-center">
+        <div class="w-auto lg:w-[40%] flex flex-col gap-4 items-center lg:items-start">
+          <h1 class="bg-[#B9FF66] w-24 rounded-lg font-semibold text-slate-900">
+            Contact us:
+          </h1>
+          <p class="text-white">Email: info@positivus.com</p>
+          <p class="text-white">Phone: 555-567-8901</p>
+          <address class="text-white">
+            Address: 1234 Main St Moonstone City, Stardust State 12345
+          </address>
+        </div>
+        <div class="w-[100%] lg:w-[60%] bg-[#292A32] h-auto lg:h-60 p-5 lg:p-0 flex flex-col lg:flex-row justify-center items-center rounded-lg">
+          <form>
+            <fieldset class="form-control w-80">
+              <div class="flex flex-col lg:flex-row gap-5 justify-center items-center">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="input input-bordered bg-transparent border border-gray-200 w-[236px]"
+                />
+                <button class="btn bg-[#B9FF66] join-item w-[236px]">
+                  Subscribe to news
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="block md:block lg:hidden mt-6">
+          <div class="flex flex-row gap-5">
+            <svg width="130.000000" height="30.000000" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>
+                  Created with Pixso.
+              </desc>
+              <defs/>
+              <circle id="Ellipse 3" cx="15.000000" cy="15.000000" r="15.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+              <path id="linkedin" d="M9.76 10.66C8.73 10.66 7.94 9.87 7.94 8.88C7.94 7.9 8.73 7.05 9.76 7.05C10.74 7.05 11.53 7.9 11.53 8.88C11.53 9.87 10.74 10.66 9.76 10.66ZM19.81 22.05L22.94 22.05L22.94 16.57C22.94 13.9 22.33 11.79 19.2 11.79C17.7 11.79 16.67 12.63 16.25 13.43L16.21 13.43L16.21 12.07L13.26 12.07L13.26 22.05L16.35 22.05L16.35 17.13C16.35 15.82 16.58 14.55 18.22 14.55C19.81 14.55 19.81 16.05 19.81 17.18L19.81 22.05ZM11.3 22.05L8.22 22.05L8.22 12.07L11.3 12.07L11.3 22.05Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+              <path id="Social icon" d="M80 15.09C80 6.75 73.28 0 65 0C56.71 0 50 6.75 50 15.09C50 22.63 55.44 28.9 62.64 30L62.64 19.47L58.83 19.47L58.83 15.09L62.64 15.09L62.64 11.8C62.64 8.03 64.87 5.9 68.26 5.9C69.95 5.9 71.65 6.2 71.65 6.2L71.65 9.91L69.77 9.91C67.9 9.91 67.29 11.07 67.29 12.29L67.29 15.09L71.47 15.09L70.8 19.47L67.29 19.47L67.29 30C74.49 28.9 80 22.63 80 15.09Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+              <circle id="Ellipse 13" cx="115.000000" cy="15.000000" r="15.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+              <path id="twitter" d="M121.99 11.49C122.68 10.97 123.3 10.35 123.78 9.63C123.16 9.9 122.44 10.11 121.72 10.18C122.47 9.73 123.02 9.04 123.3 8.18C122.61 8.59 121.82 8.9 121.03 9.07C120.34 8.35 119.41 7.94 118.37 7.94C116.37 7.94 114.75 9.56 114.75 11.56C114.75 11.83 114.79 12.11 114.86 12.38C111.86 12.21 109.17 10.76 107.38 8.59C107.07 9.11 106.9 9.73 106.9 10.42C106.9 11.66 107.52 12.76 108.52 13.42C107.93 13.38 107.34 13.24 106.86 12.97L106.86 13C106.86 14.76 108.1 16.21 109.76 16.55C109.48 16.62 109.14 16.69 108.83 16.69C108.58 16.69 108.38 16.66 108.14 16.62C108.58 18.07 109.93 19.1 111.51 19.14C110.27 20.1 108.72 20.69 107.03 20.69C106.72 20.69 106.45 20.65 106.17 20.62C107.76 21.65 109.65 22.24 111.72 22.24C118.37 22.24 121.99 16.76 121.99 11.97C121.99 11.8 121.99 11.66 121.99 11.49Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+            </svg>            
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row lg:gap-10 items-center border-[#292A32] border-t-2 pt-8">
+        <p class="text-white">© 2023 Positivus. All Rights Reserved.</p>
+        <a class="link link-hover text-white">Privacy Policy</a>
+      </div>
+    </footer>
 </body>
 
 </html>
